@@ -24,12 +24,14 @@ programa {
         escreva("===FICHA DA BATALHA===\n")
         escreva(meu_nome, " -HP:", meu_hp, "/", meu_hp_max, "\n")
         escreva(inimigo_nome, " -HP:", inimigo_hp, "/", inimigo_hp_max, "(sofreu ", dano, " de dano)","\n")
-
+        
+        // Tipos de variaveis:
         // cadeia = "dsahfsgfhgfgfahggfhasfghhafajef"
         // inteiro = 1, 10, 100, 1000,10000
         // real = 546.20, 1-.50, 50.99
         // caractere = 'M'
         // logico = verdadeiro, falso
+        // Vazio = Tipos de dados para processar fuções sem retorno de valor: exemplo, funão escreva
 
       //funções da bibliotecla de gráfico para montar a tela do jogo
         g.iniciar_modo_grafico(verdadeiro)
