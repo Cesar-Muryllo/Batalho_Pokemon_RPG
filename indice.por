@@ -31,13 +31,14 @@ programa {
         // caractere = 'M'
         // logico = verdadeiro, falso
 
+      //funções da bibliotecla de gráfico para montar a tela do jogo
         g.iniciar_modo_grafico(verdadeiro)
         g.definir_dimensoes_janela(LARGURA, ALTURA)
         g.definir_titulo_janela("Batalha-Pokemon-RPG")
         // desenho do céu do cenario
         g.definir_cor(g.criar_cor(150, 216, 250))
         g.desenhar_retangulo(0, 0, 800, 260, falso, verdadeiro)
-           // deseno da grama do cenario
+           // desenho da grama do cenario
         g.definir_cor(g.criar_cor(120, 190, 100))
         g.desenhar_retangulo(0, 260, 800, 240, falso, verdadeiro)
         // desenho da plataforma do pokemon inimigo
@@ -54,9 +55,10 @@ programa {
         g.desenhar_retangulo(180, 280, 110, 100, falso,verdadeiro)
 
         g.renderizar()
+        escreva("Janela hráfica aberta! Tela criada com biblioteca de gráficos\n")
 
         escreva("janela gráfica aberta! Utilizando a biblioteca de gráficos do portugol")
-    
+      //Essa função aguarda 5 segundos para encerrar o programa
         u.aguarde(5000)
   
   }
