@@ -9,7 +9,7 @@ programa {
       cadeia meu_nome = "Pikachu"
       inteiro meu_hp = 100
       inteiro meu_hp_max = 100
-
+      //informações do pokemon inimigo
       cadeia inimigo_nome = "Gengar"
       inteiro inimigo_hp = 120
       inteiro inimigo_hp_max = 120
@@ -20,6 +20,14 @@ programa {
         // + = adição
         // / = divisão
         // % = resto da divisão
+
+        
+        //Operadores aritimético 
+        //soma = operador utilizado para somar 2 ou mais numeros
+        //subtraçao = operador utilizado para subtrair 2 ou mais numeros
+        //multiplicação = operador utilizado para multiplica 2 ou mais numeros
+        //divisao = operador para dividir 2 ou mais da divisao
+        //os parenteses () vem primeiro que a divisao, depois a divisao vem a multiplicação, depois vem a soma e por fim a subtração
 
         escreva("===FICHA DA BATALHA===\n")
         escreva(meu_nome, " -HP:", meu_hp, "/", meu_hp_max, "\n")
@@ -33,7 +41,7 @@ programa {
         // logico = verdadeiro, falso
         // Vazio = Tipos de dados para processar fuções sem retorno de valor: exemplo, funão escreva
 
-      //funções da bibliotecla de gráfico para montar a tela do jogo
+        //funções da bibliotecla de gráfico para montar a tela do jogo
         g.iniciar_modo_grafico(verdadeiro)
         g.definir_dimensoes_janela(LARGURA, ALTURA)
         g.definir_titulo_janela("Batalha-Pokemon-RPG")
@@ -55,12 +63,16 @@ programa {
         // sprite do meu pokemon
         g.definir_cor(g.criar_cor(255, 215,0))
         g.desenhar_retangulo(180, 280, 110, 100, falso,verdadeiro)
+        //textos dos pokemons na tela do jogo
+        g.definir_cor(g.COR_PRETO)
+        g.desenhar_texto(60, 55, inimigo_nome + " HP: " + inimigo_hp)
+        g.desenhar_texto(480, 372, meu_nome + " HP: " + meu_hp)
 
         g.renderizar()
         escreva("Janela hráfica aberta! Tela criada com biblioteca de gráficos\n")
 
         escreva("janela gráfica aberta! Utilizando a biblioteca de gráficos do portugol")
-      //Essa função aguarda 5 segundos para encerrar o programa
+        //Essa função aguarda 5 segundos para encerrar o programa
         u.aguarde(5000)
   
   }
